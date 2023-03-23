@@ -940,6 +940,449 @@ a {
 /* ********* */
 /* @SIDEBAR */
 /* ********* */
+.mainRegistro {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+
+body {
+  background-color: rgb(226, 215, 225);
+}
+
+.login-container {
+  height: 33.75em;
+  width: 80em;
+  margin: 9em auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.login-container2 {
+  height: 43.75em;
+  width: 80em;
+  margin: 4em auto;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.login-info-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 2em;
+  background-color: rgb(246, 242, 246);
+}
+
+.login-info-container2 {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 2em;
+  background-color: plum;
+}
+
+.image-container {
+  /* padding: 2rem; */
+  width: 50%;
+  background-color: paleturquoise;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.image-container2 {
+  /* padding: 2rem; */
+  width: 60%;
+  background-color: pink;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 720px;
+}
+
+.title {
+  text-transform: capitalize;
+  font-size: 2.25rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: rgb(8, 0, 0);
+}
+
+/* 
+.social-login-element img {
+    width: 1.875rem;
+    height: 1.875rem;
+    position: relative;
+    top: 0;
+    left: -0.625rem;
+} */
+/* .social-login-element:hover {
+    background-color: #fff;
+} */
+.login-info-container > p {
+  font-size: 1.25em;
+  margin-top: 1.5em;
+}
+
+.inputs-container {
+  height: 55%;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inputs-container2 {
+  height: 65%;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input, .btn {
+  width: 90%;
+  height: 3.125rem;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.input2, .btn2 {
+  width: 90%;
+  height: 3.125rem;
+  font-size: 1em;
+  margin: 10px;
+}
+
+.input {
+  padding-left: 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.input2 {
+  padding-left: 20px;
+  border: none;
+  height: 300px;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.input:hover {
+  border: 2px;
+}
+
+.input2:hover {
+  border: 2px solid;
+}
+
+.btn {
+  width: 80%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(216, 132, 239);
+  cursor: pointer;
+}
+
+.btn2 {
+  width: 70%;
+  height: 800PX;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button-bg);
+  cursor: pointer;
+}
+
+.inputs-container p {
+  margin: 0;
+}
+
+.inputs-container2 p {
+  margin: 0;
+}
+
+.span {
+  color: var(--light-pink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.span2 {
+  color: var(--light-pink);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .login-container {
+    width: 70%;
+    margin-top: 5rem;
+  }
+  .login-info-container {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .image-container {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  .login-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .login-container {
+    height: 90%;
+  }
+  .social-login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 30%;
+  }
+  .login-info-container > p {
+    margin: 0;
+  }
+}
+.registro_titulo {
+  font-size: 25px;
+  text-align: center;
+}
+
+.formulario {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario__label {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo-input {
+  position: relative;
+}
+
+.formulario__input {
+  width: 100%;
+  /* background: #fff; */
+  border: 1px solid #DDEAF3;
+  border-radius: 6px;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.formulario__input:focus {
+  border: 3px solid #0075FF;
+  outline: none;
+  -webkit-box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+          box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo {
+  display: block;
+}
+
+.formulario__validacion-estado {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.formulario__checkbox {
+  margin-right: 10px;
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #F66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje p {
+  margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulario__btn {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #7F265B;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-transition: 0.1s ease all;
+  transition: 0.1s ease all;
+}
+
+.formulario__btn:hover {
+  -webkit-box-shadow: 3px 0px 30px rgb(163, 163, 163);
+          box-shadow: 3px 0px 30px rgb(163, 163, 163);
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+  border: 3px solid #bb2929;
+}
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+  .formulario {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .registro_titulo {
+    font-size: 18px;
+  }
+  .formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .formulario__btn {
+    width: 100%;
+  }
+}
 /* ********* */
 /* @HOME */
 /* ********* */
