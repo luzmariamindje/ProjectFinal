@@ -342,6 +342,82 @@ template {
 /* @BANNER */
 /* ********* */
 /* ********* */
+/* @TESTIMONIALS */
+/* ********* */
+.testimonials-container {
+  text-align: center;
+  height: auto;
+  padding: 40px 10px;
+}
+
+.testimonials-container > h4 {
+  color: blue;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 30px 0;
+}
+
+.testimonial {
+  margin: 35px 0;
+}
+
+.testimonial__img-container {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.testimonial__img-container img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.testimonial__text-box {
+  text-align: center;
+  padding: 25px;
+}
+
+.testimonial__text-box p {
+  line-height: 1.8rem;
+  color: black;
+}
+
+.testimonial__text-box h4 {
+  color: palevioletred;
+  margin-top: 20px;
+  padding: 20px 0 10px 0;
+}
+
+.testimonial__text-box span {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 820px) {
+  .testimonial-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+  }
+  .testimonial-items p {
+    max-width: 800px;
+  }
+  .testimonial__img-container {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+/* ********* */
 /* @HEADER */
 /* ********* */
 .header-container {
@@ -350,11 +426,6 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   height: 72px;
-}
-@media only screen and (min-width: 1000px) {
-  .header-container {
-    height: 12px;
-  }
 }
 .header-container .nav-container {
   display: -webkit-box;
@@ -595,10 +666,10 @@ template {
   }
   .header-container .nav-container .mobile-menu .mobile-menu__container .mobile-links-container li a {
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .header-container .nav-container .mobile-menu .mobile-menu__container .mobile-links-container li .contact-style {
-    background-color: rgb(213, 158, 176);
+    background-color: rgb(227, 32, 97);
   }
   .header-container .nav-container .mobile-menu .mobile-menu__container .mobile-links-container li .contact-style:hover {
     color: white;

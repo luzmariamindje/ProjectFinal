@@ -6,7 +6,6 @@
 
 .header-container {
     background-color: rgb(0, 195, 255);
-    // background-image: url('/public/img/smartphone/principal@2x\ \(1\).webp');
     background-size: cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -14,7 +13,7 @@
     height: 72px;
 
     @media only screen and (min-width: 1000px) {
-      height: 12px;
+     
     }
 
     .nav-container {
@@ -179,6 +178,7 @@
     @media  only screen and (min-width: $mediaDesktop-820){
         .hero-container{
             background-image: url('../img/desktop/principal_desktop@2x.webp')
+          
         }
     }
   
@@ -255,11 +255,11 @@
                             margin-left:40px;
                             a {
                                 color:whitesmoke;
-                                font-size:1rem;
+                                font-size:1.5rem;
                             }
 
                             .contact-style {
-                                background-color: rgb(213, 158, 176);
+                                background-color: rgb(227, 32, 97);
                                 &:hover {
                                     color:white;
                                     background-color: $colorfondo-movilprincipal; /*TODO ARREGLAR ESTO*/
