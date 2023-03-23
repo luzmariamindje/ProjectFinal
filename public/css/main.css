@@ -461,7 +461,7 @@ header {
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url("/public/img/svg/icon-hamburger.svg");
+  background-image: url("../public/img/svg/icon-hamburger.svg");
   background-size: inherit;
   background-repeat: no-repeat;
   background-position: center;
@@ -550,7 +550,7 @@ header {
 }
 
 .hero-container {
-  background-image: url("/public/img/smartphone/principal@2x (1).webp");
+  background-image: url("../public/img/smartphone/principal@2x (1).webp");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,6 +771,34 @@ a {
 /* ********* */
 /* @FOOTER */
 /* ********* */
+.footer-container__social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  list-style-type: none;
+}
+
+.footer-container__social-networks li {
+  margin: 0px 15px;
+}
+
+.footer-container__social-networks li svg path {
+  -webkit-transition: 400ms ease-out;
+  transition: 400ms ease-out;
+}
+
+.footer-container__social-networks li:hover svg path {
+  fill: #ece1e1;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
 a {
   text-decoration: none;
   color: black;
