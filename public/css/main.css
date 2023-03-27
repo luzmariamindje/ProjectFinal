@@ -9,6 +9,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -420,6 +421,10 @@ template {
 /* ********* */
 /* @HEADER */
 /* ********* */
+body {
+  background-color: #FFE3E3;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -461,7 +466,7 @@ header {
   display: block;
   width: 25px;
   height: 25px;
-  background-image: url("../public/img/svg/icon-hamburger.svg");
+  background-image: url("../img/svg/icon-hamburger.svg");
   background-size: inherit;
   background-repeat: no-repeat;
   background-position: center;
@@ -550,7 +555,7 @@ header {
 }
 
 .hero-container {
-  background-image: url("../public/img/smartphone/principal@2x (1).webp");
+  background-image: url("../img/smartphone/principal@2x (1).webp");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,17 +574,14 @@ header {
   background-repeat: no-repeat;
   min-height: 560px;
 }
-.hero-container h1 {
-  padding: 5px 10px;
+.hero-container .titulo_cuidador {
   font-size: 1rem;
-  margin: 30px 0 10px 0;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
-  color: black;
+  color: rgb(12, 11, 12);
 }
 @media only screen and (min-width: 640px) {
-  .hero-container h1 {
+  .hero-container .titulo_cuidador {
     font-size: 3rem;
     margin: 60px 0 10px 0;
   }
@@ -593,7 +595,7 @@ header {
     margin: 40px 0 10px 0;
   }
   .hero-container h1 p {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: 6px;
   }
   .hero-container h1 p:first-child::after {
@@ -854,6 +856,7 @@ a {
           align-items: center;
   gap: 50px;
   margin: 100px 0;
+  list-style-type: none;
 }
 
 .footerSimple__copy {
@@ -968,20 +971,17 @@ a {
 /* ********* */
 /* @SIDEBAR */
 /* ********* */
-.mainRegistro {
-  max-width: 800px;
-  width: 90%;
-  margin: auto;
-  padding: 40px;
-}
-
-body {
-  background-color: rgb(226, 215, 225);
+:root {
+  --login-bg:#f8f3ff;
+  --title-bg: #9089cc;
+  --button-bg: #674baf;
+  --light-pink: #e882e8;
+  --image-bg: #eadbff ;
 }
 
 .login-container {
   height: 33.75em;
-  width: 80em;
+  width: 70em;
   margin: 9em auto;
   border-radius: 10px;
   display: -webkit-box;
@@ -1021,7 +1021,7 @@ body {
           align-items: center;
   text-align: center;
   padding-top: 2em;
-  background-color: rgb(246, 242, 246);
+  background-color: var(--login-bg);
 }
 
 .login-info-container2 {
@@ -1039,13 +1039,13 @@ body {
           align-items: center;
   text-align: center;
   padding-top: 2em;
-  background-color: plum;
+  background-color: var(--login-bg);
 }
 
 .image-container {
   /* padding: 2rem; */
   width: 50%;
-  background-color: paleturquoise;
+  background-color: var(--image-bg);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1053,7 +1053,7 @@ body {
 .image-container2 {
   /* padding: 2rem; */
   width: 60%;
-  background-color: pink;
+  background-color: var(--image-bg);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 720px;
@@ -1064,7 +1064,7 @@ body {
   font-size: 2.25rem;
   font-weight: 200;
   letter-spacing: 1px;
-  color: rgb(8, 0, 0);
+  color: var(--title-bg);
 }
 
 /* 
@@ -1153,11 +1153,11 @@ body {
 }
 
 .input:hover {
-  border: 2px;
+  border: 2px solid var(--button-bg);
 }
 
 .input2:hover {
-  border: 2px solid;
+  border: 2px solid var(--button-bg);
 }
 
 .btn {
@@ -1167,7 +1167,7 @@ body {
   color: white;
   border: none;
   border-radius: 5px;
-  background-color: rgb(216, 132, 239);
+  background-color: var(--button-bg);
   cursor: pointer;
 }
 
@@ -1237,178 +1237,6 @@ body {
   }
   .login-info-container > p {
     margin: 0;
-  }
-}
-.registro_titulo {
-  font-size: 25px;
-  text-align: center;
-}
-
-.formulario {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.formulario__label {
-  display: block;
-  font-weight: 700;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.formulario__grupo-input {
-  position: relative;
-}
-
-.formulario__input {
-  width: 100%;
-  /* background: #fff; */
-  border: 1px solid #DDEAF3;
-  border-radius: 6px;
-  border: 3px solid transparent;
-  border-radius: 3px;
-  height: 45px;
-  line-height: 45px;
-  padding: 0 40px 0 10px;
-  -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-}
-
-.formulario__input:focus {
-  border: 3px solid #0075FF;
-  outline: none;
-  -webkit-box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
-          box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
-}
-
-.formulario__input-error {
-  font-size: 12px;
-  margin-bottom: 0;
-  display: none;
-}
-
-.formulario__input-error-activo {
-  display: block;
-}
-
-.formulario__validacion-estado {
-  position: absolute;
-  right: 10px;
-  bottom: 15px;
-  z-index: 100;
-  font-size: 16px;
-  opacity: 0;
-}
-
-.formulario__checkbox {
-  margin-right: 10px;
-}
-
-.formulario__grupo-terminos,
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
-}
-
-.formulario__mensaje {
-  height: 45px;
-  line-height: 45px;
-  background: #F66060;
-  padding: 0 15px;
-  border-radius: 3px;
-  display: none;
-}
-
-.formulario__mensaje-activo {
-  display: block;
-}
-
-.formulario__mensaje p {
-  margin: 0;
-}
-
-.formulario__grupo-btn-enviar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.formulario__btn {
-  height: 45px;
-  line-height: 45px;
-  width: 30%;
-  background: #7F265B;
-  color: #fff;
-  font-weight: bold;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  -webkit-transition: 0.1s ease all;
-  transition: 0.1s ease all;
-}
-
-.formulario__btn:hover {
-  -webkit-box-shadow: 3px 0px 30px rgb(163, 163, 163);
-          box-shadow: 3px 0px 30px rgb(163, 163, 163);
-}
-
-.formulario__mensaje-exito {
-  font-size: 14px;
-  color: #119200;
-  display: none;
-}
-
-.formulario__mensaje-exito-activo {
-  display: block;
-}
-
-/* ----- -----  Estilos para Validacion ----- ----- */
-.formulario__grupo-correcto .formulario__validacion-estado {
-  color: #1ed12d;
-  opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__label {
-  color: #bb2929;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-  color: #bb2929;
-  opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input {
-  border: 3px solid #bb2929;
-}
-
-/* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-  .formulario {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-  .registro_titulo {
-    font-size: 18px;
-  }
-  .formulario__grupo-terminos,
-.formulario__mensaje,
-.formulario__grupo-btn-enviar {
-    -ms-grid-column: 1;
-    grid-column: 1;
-  }
-  .formulario__btn {
-    width: 100%;
   }
 }
 /* ********* */
